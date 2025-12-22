@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro de Pérdidas y Daños</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global1.css">
+    <link rel="icon" href="https://transparencia-climatica.miambiente.gob.pa/wp-content/uploads/2020/08/cropped-Bandera-para-favicon-192x192.png" sizes="192x192" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <!-- Brand -->
+  <a><img src="imagen/Header2.png" alt="Ministerio De Ambiente" style="width:450px; height:120px"></a>
+  <p><br></p>
+
+  <!-- Links -->
+  <ul class="navbar-nav" <br>
+    <li class="nav-item">
+      <a class="nav-link" href="principal.php">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Acerca de PNTC</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Publicaciones</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Dirección de Cambio Climatico</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Módulos
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Observatorio</a>
+        <a class="dropdown-item" href="resiliencia2.php">Resiliencia</a>   
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Inicio de Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container"><h3>Registro Nacional de Pérdidas y Daños</h3>
+  <nav class="navbar navbar-expand-xl bg-light">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active"  href="PyD1.php">Identificación<br> del evento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD2.php">Localización<br> geográfica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD3.php">Población y lugares<br> afectados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD4.php">Sectores y activos<br>afectados (daños físicos)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD5.php">Pérdidas económicas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD6.php">Pérdidas y daños<br> no económicos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD7.php">Respuesta, recuperación<br> y financiamiento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD8.php">Calidad de datos, validación<br> y metadatos</a>
+    </li>
+  </ul>
+</nav>
+
+    <div class="tab-content">
+      <h3> Sección 1 – Identificación del evento</h3><br>
+      
+          <table>
+              <tbody>
+                <tr>
+                  <td><label for="fname">Código evento</label></td>
+                  <td><input type="text" class="form-control" id="fname" name="fname" placeholder="PAN-2025-01"></td>      
+                </tr>
+                <tr>
+                  <td><label for="lname">Nombre del Evento</label></td>
+                  <td><textarea class="form-control" rows="2" id="comment" placeholder="Nombre descriptivo con el que se conoce el evento"></textarea></td>
+                </tr>
+                <tr>
+                  <td><label for="cars">Tipo de amenza</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar Tipo de peligro principal asociado al evento </option>
+                  <option value="volvo">inundación</option>
+                  <option value="saab">deslizamiento</option>
+                  <option value="fiat">sequía</option>
+                  <option value="audi">tormenta</option>
+                  <option value="audi">ola de calor</option>
+                  <option value="audi">epidemia</option>
+                  <option value="audi">otros</option>
+                </select></td>
+                </tr>
+                
+                <tr>
+                  <td><label for="lname">Origen del Evento</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar el origen del evento</option>
+                  <option value="volvo">hidrometeorológico</option>
+                  <option value="saab">climatológico</option>
+                  <option value="fiat">geofísico</option>
+                  <option value="audi">biológico</option>
+                  <option value="audi">tecnológico</option>
+                  <option value="audi">combinado</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Fecha de inicio</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="AAAA-MM-DD"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Fecha de finalización</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="AAAA-MM-DD"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Hora de inicio</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="HH:MM"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Declaratoria de emergencia</label></td>
+                  <td class="form-check-inline">
+                      <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Si
+                            <input type="radio" class="form-check-input" name="optradio">No
+                      </label>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Tipo de declaratoria</label></td>
+                  <td><select id="declaratoria" name="declaratoria" class="form-control">
+                  <option value="1">Seleccionar el tipo de declaratoria</option>
+                  <option value="2">Nacional</option>
+                  <option value="3">provincial</option>
+                  <option value="4">Municipal</option>
+                  <option value="5">Sectorial</option>
+                  <option value="6">Otros</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Institución de reporte principal</label></td>
+                  <td><select id="declaratoria" name="declaratoria" class="form-control">
+                  <option value="1">Seleccionar el tipo de declaratoria</option>
+                  <option value="2">SINAPROC</option>
+                  <option value="3">Municipio</option>
+                  <option value="4">Mi Ambiente</option>
+                  <option value="5">Otros</option>
+                </select></td>
+              </tr>
+                
+                <tr>
+                  <td><label for="lname">Otra fuente de información</label></td>
+                  <td>
+                  <textarea  class="form-control" rows="3" id="comment" placeholder="Otras instituciones, medios o actores que aportan datos (ONG, comunidades, academia, etc.)."></textarea> </td> 
+                </tr>  
+
+                <tr>
+                  <td colspan='2'><button type="submit" class="btn btn-danger">Guardar Formulario</button></td>
+                </tr>
+              </tbody>
+            </table>
+            
+</div>
+
+ </div>
+  </div> 
+
+<div class="footer-widget-area">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <p>Copyright © 2025 | Ministerio de Ambiente</p>
+</div>
+</body>
+</html>

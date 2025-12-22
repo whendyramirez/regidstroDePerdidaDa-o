@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro de Pérdidas y Daños</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global1.css">
+    <link rel="icon" href="https://transparencia-climatica.miambiente.gob.pa/wp-content/uploads/2020/08/cropped-Bandera-para-favicon-192x192.png" sizes="192x192" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <!-- Brand -->
+  <a><img src="imagen/Header2.png" alt="Ministerio De Ambiente" style="width:450px; height:120px"></a>
+  <p><br></p>
+
+  <!-- Links -->
+  <ul class="navbar-nav" <br>
+    <li class="nav-item">
+      <a class="nav-link" href="principal.php">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Acerca de PNTC</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Publicaciones</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Dirección de Cambio Climatico</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Módulos
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Observatorio</a>
+        <a class="dropdown-item" href="resiliencia2.php">Resiliencia</a>   
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Inicio de Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container"><h3>Registro Nacional de Pérdidas y Daños</h3>
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"  href="PyD1.php">Identificación<br> del evento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD2.php">Localización<br> geográfica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD3.php">Población y lugares<br> afectados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD4.php">Sectores y activos<br>afectados (daños físicos)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="PyD5.php">Pérdidas económicas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD6.php">Pérdidas y daños<br> no económicos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD7.php">Respuesta, recuperación<br> y financiamiento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD8.php">Calidad de datos, validación<br> y metadatos</a>
+    </li>
+  </ul>
+</nav>
+
+    <div class="tab-content">
+      <h3>Sección 5 – Pérdidas económicas</h3><br>
+          <table>
+              <tbody>
+              
+                <tr>
+                  <td><label for="cars">Tipo de Pérdida económica</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar el tipo de Pérdidas </option>
+                  <option value="volvo">daño directo</option>
+                  <option value="saab">Pérdida indirecta</option>
+                  <option value="fiat">Costo respuesta</option>
+                  <option value="audi">Costo de recuperación</option>
+                 </select></td>
+                </tr>
+
+                 <tr>
+                  <td><label for="cars">Sector relacionado</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar sector al que corresponde el daño </option>
+                  <option value="volvo">Vivienda</option>
+                  <option value="saab">Salud</option>
+                  <option value="fiat">Transporte</option>
+                  <option value="audi">Educación</option>
+                  <option value="audi">Transporte</option>
+                  <option value="audi">Agua</option>
+                  <option value="audi">otros</option>
+                </select></td>
+                </tr>
+                
+                <tr>
+                  <td><label for="lname">Tipo de Activo</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar tipo de activo físico</option>
+                  <option value="volvo">Vivienda</option>
+                  <option value="saab">puente</option>
+                  <option value="fiat">carretera</option>
+                  <option value="audi">Cultivo</option>
+                  <option value="audi">red de Agua</option>
+                  <option value="audi">centro educativo</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Tipo de activo económico</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar el tipo de activo económico</option>
+                  <option value="volvo">producción agrícola</option>
+                  <option value="saab">actividad comercial</option>
+                  <option value="fiat">turismo</option>
+                  <option value="audi">otro</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Valor estimado de pérdida</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder=""></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Moneda</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="PAB/USD"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Metodología de estimación</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="PAB/USD"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Metodología de estimación</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar la metodología</option>
+                  <option value="volvo">DaLA</option>
+                  <option value="saab">Costo</option>
+                  <option value="fiat">reposición</option>
+                  <option value="fiat">valoración sectorial</option>
+                  <option value="fiat">estudio especifico</option>
+                  <option value="audi">otro</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Fuente de datos económico</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar la fuente de datos</option>
+                  <option value="volvo">MEF</option>
+                  <option value="saab">MIDa</option>
+                  <option value="fiat">MOP</option>
+                  <option value="fiat">Sector privado</option>
+                  <option value="audi">otro</option>
+                </select></td>
+                </tr>
+
+              </tbody>
+            </table>
+</div>
+
+ </div>
+  </div>
+
+
+
+<div class="footer-widget-area">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <p>Copyright © 2025 | Ministerio de Ambiente</p>
+</div>
+</body>
+</html>

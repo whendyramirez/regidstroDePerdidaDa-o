@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro de Pérdidas y Daños</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global1.css">
+    <link rel="icon" href="https://transparencia-climatica.miambiente.gob.pa/wp-content/uploads/2020/08/cropped-Bandera-para-favicon-192x192.png" sizes="192x192" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <!-- Brand -->
+  <a><img src="imagen/Header2.png" alt="Ministerio De Ambiente" style="width:450px; height:120px"></a>
+  <p><br></p>
+
+  <!-- Links -->
+  <ul class="navbar-nav" <br>
+    <li class="nav-item">
+      <a class="nav-link" href="principal.php">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Acerca de PNTC</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Publicaciones</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Dirección de Cambio Climatico</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Módulos
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Observatorio</a>
+        <a class="dropdown-item" href="resiliencia2.php">Resiliencia</a>   
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Inicio de Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container"><h3>Registro Nacional de Pérdidas y Daños</h3>
+ <nav class="navbar navbar-expand-xl bg-light">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"  href="PyD1.php">Identificación<br> del evento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="PyD2.php">Localización<br> geográfica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD3.php">Población y lugares<br> afectados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD4.php">Sectores y activos<br>afectados (daños físicos)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD5.php">Pérdidas económicas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD6.php">Pérdidas y daños<br> no económicos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD7.php">Respuesta, recuperación<br> y financiamiento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD8.php">Calidad de datos, validación<br> y metadatos</a>
+    </li>
+  </ul>
+</nav>
+
+
+    <div class="tab-content">
+       <h3>Sección 2 – Localización geográfica</h3><br>
+    <table>
+    <tbody>
+            <tr>
+                <td><label for="fname">País</label></td>
+                <td><input type="text" class="form-control" id="fname" name="fname" placeholder="Panamá"></td>      
+            </tr>
+
+        <tr>
+            <td><label for="lname">Provincia</label></td>
+            <td><select id="cars" name="cars" class="form-control">
+                    <option value="volvo">Seleccionar provincia</option>
+                    <option value="volvo">Bocas del Toro</option>
+                    <option value="saab">Coclé</option>
+                    <option value="fiat">Colón</option>
+                    <option value="audi">Chiriquí</option>
+                    <option value="audi">Darién</option>
+                    <option value="audi">Panamá</option>
+                    <option value="audi">Panamá Oeste</option>
+                    <option value="audi">Veragua</option>
+            </select></td>
+        </tr>
+
+        <tr>
+        <td><label for="lname">Distrito</label></td>
+        <td><select id="cars" name="cars" class="form-control">
+                  <option value="1">Seleccionar distrito</option>
+                  <option value="2">Bocas del Toro</option>
+                  <option value="3">Changuinola</option>
+                  <option value="4">Alanje</option>
+                  <option value="4">Barú</option>
+                  <option value="4">Chepigana</option>
+                  <option value="4">Pinogana</option>
+                  <option value="4">Balboa</option>
+                  <option value="5">Panamá</option>
+        </select></td>
+        </tr>
+
+        <tr>
+        <td><label for="lname">Corregimiento</label></td>
+        <td><select id="cars" name="cars" class="form-control">
+                  <option value="1">Seleccionar Corregimiento</option>
+                  <option value="2">Aguadulce</option>
+                  <option value="3">Antón</option>
+                  <option value="4">La Pintada</option>
+                  <option value="5">Chagres</option>
+                  <option value="5">San Miguel</option>
+                  <option value="5">Chepo</option>
+                  <option value="5">Panamá</option>
+        </select></td>
+        </tr>
+
+        <tr>
+        <td><label for="fname">Comunidad/Localidad</label></td>
+        <td><textarea class="form-control" rows="2" id="comment" placeholder="Nombre de la comunidad, barrio o caserío afectado"></textarea></td>      
+       </tr>
+
+      <tr>
+        <td><label for="lname">Tipo de Entorno</label></td>
+        <td><select id="cars" name="cars" class="form-control">
+                  <option value="1">Seleccionar tipo de entorno</option>
+                  <option value="2">Urbano</option>
+                  <option value="3">Rural</option>
+                  <option value="4">índigena</option>
+                  <option value="5">Costero</option>
+                  <option value="5">Insular</option>
+                  <option value="5">Otro</option>
+        </select></td>
+        </tr>
+
+        <tr>
+        <td><label for="fname">Latitud</label></td>
+        <td><input type="text" class="form-control" id="fname" name="fname" placeholder="Latitud aproximada"></td>      
+        </tr>
+
+       <tr>
+        <td><label for="fname">Longitud</label></td>
+        <td><input type="text" class="form-control" id="fname" name="fname" placeholder="Longitud aproximada"></td>      
+       </tr>
+
+       <tr>
+        <td><label for="fname">Polígono</label></td>
+        <td><input type="file" class="form-control-file border" name="file"> </td>       
+       </tr>
+
+    </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+<div class="footer-widget-area">
+ <p>Copyright © 2025 | Ministerio de Ambiente</p>
+</div>
+</body>
+</html>

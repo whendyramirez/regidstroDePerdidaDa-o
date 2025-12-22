@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro de Pérdidas y Daños</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global1.css">
+    <link rel="icon" href="https://transparencia-climatica.miambiente.gob.pa/wp-content/uploads/2020/08/cropped-Bandera-para-favicon-192x192.png" sizes="192x192" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <!-- Brand -->
+  <a><img src="imagen/Header2.png" alt="Ministerio De Ambiente" style="width:450px; height:120px"></a>
+  <p><br></p>
+
+  <!-- Links -->
+  <ul class="navbar-nav" <br>
+    <li class="nav-item">
+      <a class="nav-link" href="principal.php">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Acerca de PNTC</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Publicaciones</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Dirección de Cambio Climatico</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Módulos
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Observatorio</a>
+        <a class="dropdown-item" href="resiliencia2.php">Resiliencia</a>   
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Inicio de Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container"><h3>Registro Nacional de Pérdidas y Daños</h3>
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"  href="PyD1.php">Identificación<br> del evento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD2.php">Localización<br> geográfica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD3.php">Población y lugares<br> afectados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD4.php">Sectores y activos<br>afectados (daños físicos)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD5.php">Pérdidas económicas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD6.php">Pérdidas y daños<br> no económicos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="PyD7.php">Respuesta, recuperación<br> y financiamiento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PyD8.php">Calidad de datos, validación<br> y metadatos</a>
+    </li>
+  </ul>
+</nav>
+
+    <div class="tab-content">
+      <h3>Sección 7 – Respuesta, recuperación y financiamiento</h3><br>
+          <table>
+              <tbody>
+              
+                <tr>
+                  <td><label for="cars">Medidas de respuesta</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar principales medidas de respuesta implementadas  </option>
+                  <option value="saab">evacuaciones</option>
+                  <option value="fiat">albergues</option>
+                  <option value="audi">distribución de ayuda</option>
+                  <option value="audi">otros</option>
+                 </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="cars">Medidas de recuperación</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar principales medidas de recuperación temprana y reconstrucción </option>
+                  <option value="saab">rehabilitación de infraestructura</option>
+                  <option value="fiat">apoyo a medios de vida</option>
+                  <option value="audi">restauración de ecosistemas</option>
+                  <option value="audi">otros</option>
+                 </select></td>
+                </tr>
+
+                 <tr>
+                  <td><label for="cars">Fecha de inicio de recuperación</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="AAAA-MM-DD"></td>
+                </tr>
+
+                 <tr>
+                  <td><label for="lname">Estado de recuperación</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar de estado actual</option>
+                  <option value="volvo">no iniciada</option>
+                  <option value="saab">en curso</option>
+                  <option value="fiat">completada</option>
+                  <option value="audi">prolongada</option>
+                  </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="cars">Financiamiento nacional</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="Monto de recursos nacionales"></td>
+                </tr>
+
+                <tr>
+                  <td><label for="cars">Financiamiento internacional</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="Monto de cooperación internacional asignado."></td>
+                </tr>
+             
+                <tr>
+                  <td><label for="lname">Fuente de Financiamiento</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar principales fuentes</option>
+                  <option value="volvo">presupuesto nacional</option>
+                  <option value="saab"> fondos de emergencia</option>
+                  <option value="fiat">agencias de cooperación</option>
+                  <option value="audi">fondos climáticos</option>
+                  <option value="audi">otros</option>
+                  </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="cars">Lecciones aprendidas</label></td>
+                  <td><textarea type="text" rows="3" class="form-control" id="lname" name="lname" placeholder="Observaciones clave para mejorar la gestión del riesgo y la adaptación en futuros evento"></textarea></td>
+                </tr>
+
+              </tbody>
+            </table>
+</div>
+
+ </div>
+  </div>
+
+
+
+<div class="footer-widget-area">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002662">
+  <p>Copyright © 2025 | Ministerio de Ambiente</p>
+</div>
+</body>
+</html>
