@@ -51,39 +51,50 @@
   <nav class="navbar navbar-expand-sm bg-light justify-content-center">
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link"  href="PyD1.php">Identificación<br> del evento</a>
+      <a class="nav-link"  href="PyD1.html">Identificación<br> del evento</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD2.php">Localización<br> geográfica</a>
+      <a class="nav-link" href="PyD2.html">Localización<br> geográfica</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD3.php">Población y lugares<br> afectados</a>
+      <a class="nav-link" href="PyD3.html">Población y lugares<br> afectados</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="PyD4.php">Sectores y activos<br>afectados (daños físicos)</a>
+      <a class="nav-link" href="PyD4.html">Sectores y activos<br>afectados (daños físicos)</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD5.php">Pérdidas económicas</a>
+      <a class="nav-link active" href="PyD5.html">Pérdidas económicas</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD6.php">Pérdidas y daños<br> no económicos</a>
+      <a class="nav-link" href="PyD6.html">Pérdidas y daños<br> no económicos</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD7.php">Respuesta, recuperación<br> y financiamiento</a>
+      <a class="nav-link" href="PyD7.html">Respuesta, recuperación<br> y financiamiento</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="PyD8.php">Calidad de datos, validación<br> y metadatos</a>
+      <a class="nav-link" href="PyD8.html">Calidad de datos, validación<br> y metadatos</a>
     </li>
   </ul>
 </nav>
 
     <div class="tab-content">
-      <h3>Sección 4 – Sectores y activos afectados (daños físicos)</h3><br>
+      <h3>Sección 5 – Pérdidas económicas</h3><br>
           <table>
               <tbody>
               
                 <tr>
-                  <td><label for="cars">Sector</label></td>
+                  <td><label for="cars">Tipo de Pérdida económica</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar el tipo de Pérdidas </option>
+                  <option value="volvo">daño directo</option>
+                  <option value="saab">Pérdida indirecta</option>
+                  <option value="fiat">Costo respuesta</option>
+                  <option value="audi">Costo de recuperación</option>
+                 </select></td>
+                </tr>
+
+                 <tr>
+                  <td><label for="cars">Sector relacionado</label></td>
                   <td><select id="cars" name="cars" class="form-control">
                   <option value="volvo">Seleccionar sector al que corresponde el daño </option>
                   <option value="volvo">Vivienda</option>
@@ -95,23 +106,11 @@
                   <option value="audi">otros</option>
                 </select></td>
                 </tr>
-
-                 <tr>
-                  <td><label for="cars">Sub sector</label></td>
-                  <td><select id="cars" name="cars" class="form-control">
-                  <option value="volvo">Seleccionar Subcategoría dentro del sector </option>
-                  <option value="volvo">hospitales</option>
-                  <option value="saab">Centro de salud</option>
-                  <option value="fiat">Escuela primaria</option>
-                  <option value="audi">Escuelas secundaria</option>
-                  <option value="audi">otros</option>
-                </select></td>
-                </tr>
                 
                 <tr>
                   <td><label for="lname">Tipo de Activo</label></td>
                   <td><select id="cars" name="cars" class="form-control">
-                  <option value="volvo">Seleccionar etipo de activo físico</option>
+                  <option value="volvo">Seleccionar tipo de activo físico</option>
                   <option value="volvo">Vivienda</option>
                   <option value="saab">puente</option>
                   <option value="fiat">carretera</option>
@@ -122,39 +121,54 @@
                 </tr>
 
                 <tr>
-                  <td><label for="lname">Unidad de medida física</label></td>
+                  <td><label for="lname">Tipo de activo económico</label></td>
                   <td><select id="cars" name="cars" class="form-control">
-                  <option value="volvo">Seleccionar la unidad usada para cuantificar el activo</option>
-                  <option value="volvo">Número de unidades</option>
-                  <option value="saab">Km de carretera</option>
-                  <option value="fiat">m2 construido</option>
+                  <option value="volvo">Seleccionar el tipo de activo económico</option>
+                  <option value="volvo">producción agrícola</option>
+                  <option value="saab">actividad comercial</option>
+                  <option value="fiat">turismo</option>
                   <option value="audi">otro</option>
                 </select></td>
                 </tr>
 
                 <tr>
-                  <td><label for="lname">Cantidad dañada</label></td>
+                  <td><label for="lname">Valor estimado de pérdida</label></td>
                   <td><input type="text" class="form-control" id="lname" name="lname" placeholder=""></td>
                 </tr>
 
                 <tr>
-                  <td><label for="lname">Cantidad destruida</label></td>
-                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder=""></td>
+                  <td><label for="lname">Moneda</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="PAB/USD"></td>
                 </tr>
 
                 <tr>
-                  <td><label for="lname">Infraestructura Crítica</label></td>
-                  <td class="form-check-inline">
-                      <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">Si
-                            <input type="radio" class="form-check-input" name="optradio">No
-                      </label>
-                    </td>
+                  <td><label for="lname">Metodología de estimación</label></td>
+                  <td><input type="text" class="form-control" id="lname" name="lname" placeholder="PAB/USD"></td>
                 </tr>
 
                 <tr>
-                  <td><label for="lname">Descripción de daño</label></td>
-                  <td><textarea class="form-control" rows="2" id="comment" placeholder=""></textarea></td>
+                  <td><label for="lname">Metodología de estimación</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar la metodología</option>
+                  <option value="volvo">DaLA</option>
+                  <option value="saab">Costo</option>
+                  <option value="fiat">reposición</option>
+                  <option value="fiat">valoración sectorial</option>
+                  <option value="fiat">estudio especifico</option>
+                  <option value="audi">otro</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                  <td><label for="lname">Fuente de datos económico</label></td>
+                  <td><select id="cars" name="cars" class="form-control">
+                  <option value="volvo">Seleccionar la fuente de datos</option>
+                  <option value="volvo">MEF</option>
+                  <option value="saab">MIDa</option>
+                  <option value="fiat">MOP</option>
+                  <option value="fiat">Sector privado</option>
+                  <option value="audi">otro</option>
+                </select></td>
                 </tr>
 
               </tbody>
